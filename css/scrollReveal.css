@@ -1,4 +1,9 @@
-.animationAvatar,.textoEImagem,.div-texto-sectionUm,.div-texto-sectionUmSegundaParte,.h2Mario{
+.animationAvatar,
+.textoEImagem,
+.div-texto-sectionUm,
+.div-texto-sectionUmSegundaParte,
+.h2Mario,
+#container,
+#banner {
     visibility: hidden;
 }
-
