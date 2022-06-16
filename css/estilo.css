@@ -17,6 +17,7 @@ main {
 header {
     background-image: url('/gifs/backgroundGif.webp');
     background-attachment: fixed;
+    background-size: cover;
 
     height: 90%;
     width: 99.1vw;
@@ -196,6 +197,7 @@ header {
     width: 99%;
     height: 91%;
     position: absolute;
+    
 }
 
 .div-texto-sectionUm {
@@ -425,26 +427,40 @@ header {
 .projetos{
     position: relative;
     top: 900px;
-    height: 800px;
+    height: 900px;
     text-align: center;
+    
     font-family: 'Chelsea Market', cursive;
-    background-color: #F2BE22;   
+    background-image:linear-gradient(to right,#F2BE22,#F4D26C,#736332 ) ; 
+    background-size: 500% 100%;
+    animation: backgroundAnimation  infinite 5s alternate ease-in-out  ;
+}
+
+@keyframes backgroundAnimation {
+    0%{
+        background-position-x:0%;
+    }
+    100%{
+        background-position-x: 100% ;
+    }
 }
 
 #container{
     display: flex;
-    width: 100%;    
+    width: 100%;     
     align-items: center;
+    
 }
 
 
 
 #divProjetos{
-    width: 80%;
-    height: 90%;       
+    width: 40%;
+    height: 20%;       
     display: flex;
     flex-direction: column;
     padding: 20px; 
+    
    
 }
 
@@ -466,7 +482,8 @@ header {
 }
 
 .doisProjetos {
-    display: flex;
+    display: flex;   
+    width: 650px;
 }
 
 .paragrafoProjeto{
@@ -481,7 +498,8 @@ header {
 }
 
 #descricaoProjeto{
-    background-color:#0b2b40d5;
+    background-color:#000000;
+    
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.51);
     width: 50%;
     height: 500px;
@@ -493,6 +511,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 50px;
 
 }
 #h1Descricao{
@@ -515,29 +534,114 @@ header {
     height: 950px;
     text-align: center;
     font-family: 'Chelsea Market', cursive;
-    background-color: rgb(2, 2, 2);
+    background-color: rgb(25, 25, 25);
     display: flex;
     flex-direction: column;
     color: #F2BE22;
     object-fit: cover;
+    
+    
     
 }
 
 #banner{
     width: 700px;
     height: 600px;
-    margin: auto;    
+    margin: auto;     
     
     
+}
+
+.icone{
+    width: 60px;
+    margin:  10px;
+    position: relative;
+    bottom: 0;
+    
+}
+
+.animacaoicones5Sec {
+    animation: iconesAnimation ease-out 3s infinite;
+}
+
+.animacaoIcones2Sec{
+    animation: iconesAnimation ease-out 1s infinite;
+}
+
+@keyframes iconesAnimation {
+    0% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 13px;
+    }
+    100%{
+        bottom: 0;
+    }
 }
 
 
 #display{
-    font-size: 2em;
+    font-size: 1.7em;
     font-family: 'Biryani', sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     text-shadow: 1px 2px 1px black;
+    text-align: start;
 }
+
+
+/* Final */
+#final{
+    position: relative;
+    top: 900px;
+    height: 800px;
+    text-align: center;
+    background-color: #000000;
+    padding: 10px 50px;
+}
+
+#containerFinal{
+    display: flex;    
+    position: relative;
+    top: 100px;
+    justify-content: space-around;   
+    width: 70%;    
+    margin-left: 70px;
+    align-items: center;
+}
+
+
+#h1Final{
+    color: white;
+    font-family: 'Chelsea Market', cursive;   
+}
+
+#divPerfil{
+    width: 300px;    
+    height: 300px;
+    position: relative;
+    
+}
+
+#fotoPerfil{
+    width: 300px;
+    border-radius: 47%;
+    filter: grayscale(30%);
+    transition-duration: 0.4s;
+    
+}
+
+#fotoPerfil:hover{
+    filter: grayscale(0);
+    transition-duration: 0.4s;
+}
+
+#divPFInal{
+    color: white;
+    width: 60%;
+}
+
+
 
 
 

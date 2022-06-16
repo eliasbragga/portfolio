@@ -4,6 +4,7 @@
 .div-texto-sectionUmSegundaParte,
 .h2Mario,
 #container,
-#banner {
+#banner,
+.icone {
     visibility: hidden;
 }

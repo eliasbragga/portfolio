@@ -35,4 +35,10 @@ sr.reveal('#banner', {
     duration: 2000
 })
 
+sr.reveal('.icone', {
+    rotate: { x: 50, y:0 , z:50 },
+    duration: 2000
+})
+
+
 
