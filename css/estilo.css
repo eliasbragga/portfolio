@@ -27,8 +27,12 @@ header {
     align-items: center;
     padding-left: 400px;
     box-shadow: inset 10px px 10px 15px rgb(211, 0, 0);
+    overflow: hidden;
+    
 
 }
+
+
 
 #texto-e-imagem {
     display: flex;
@@ -49,6 +53,39 @@ header {
     overflow: hidden;
 
 }
+
+#rolagem{
+    width: 70px;
+    height: 70px;
+    background-color: #5b8596;
+    position: fixed;  
+    bottom: 50px;
+    right: -30px;
+    justify-content: center;
+    border-radius: 50%;
+    transition-duration: 1s;
+    z-index: 300;
+  
+    
+}
+
+#rolagem:hover{
+    transition-duration: 1s;
+    right: 20px;
+    background-color: #5b8596;
+    cursor: pointer;
+
+}
+
+#imageSeta{
+    width: 40px;
+    margin: auto;
+    position: relative;
+    left: 15px;
+    top: 10px;
+}
+
+
 
 .typing-animation {
     animation: blinkCursor 500ms steps(40) infinite normal, typing 1.8s steps(40) 1s normal both;
@@ -110,6 +147,23 @@ header {
 
 }
 
+@keyframes animationSeta-descricao-projeto {
+    0% {
+        bottom: -40px;
+    }
+
+
+    50% {
+        bottom: -30px;
+    }
+
+
+    100% {
+        bottom: -40px;
+    }
+
+}
+
 @keyframes animacaoH2 {
     0% {
         top: 120px;
@@ -139,6 +193,7 @@ header {
 #avatarImage {
     width: 280px;
     position: relative;
+    
 
 }
 
@@ -160,6 +215,21 @@ header {
 
 .div-image-seta:hover {
     animation: animationSeta 800ms infinite linear;
+}
+
+.div-image-seta-descricao-projeto {
+    position: absolute;
+    left: 48%;
+    bottom: -40px;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(25, 25, 25, 0.5);
+    border-radius: 50%;
+
+}
+
+.div-image-seta-descricao-projeto:hover {
+    animation: animationSeta-descricao-projeto 800ms infinite linear;
 }
 
 #iconeSeta {
@@ -203,11 +273,12 @@ header {
 .div-texto-sectionUm {
     width: 49%;
     height: 50%;
-    background-color: #0B2B40;
+    background-color: rgb(25, 25, 25);
     color: aliceblue;
     position: relative;
     top: 120px;
     font-family: 'Biryani', sans-serif;
+    padding: 20px;
 
     border-radius: 7px;
     text-shadow: 2px 2px 2px black;
@@ -218,10 +289,10 @@ header {
 .div-texto-sectionUmSegundaParte {
     width: 49%;
     height: 50%;
-    background-color: #0B2B40;
+    background-color: rgb(25, 25, 25);
     color: aliceblue;
     position: relative;
-
+    padding: 20px;
     font-family: 'Biryani', sans-serif;
 
     border-radius: 7px;
@@ -428,12 +499,19 @@ header {
     position: relative;
     top: 900px;
     height: 900px;
-    text-align: center;
-    
+    text-align: center;    
     font-family: 'Chelsea Market', cursive;
-    background-image:linear-gradient(to right,#F2BE22,#F4D26C,#736332 ) ; 
+    background-image:linear-gradient(to right,#F2BE22,#F28B16,#030303 ) ; 
     background-size: 500% 100%;
     animation: backgroundAnimation  infinite 5s alternate ease-in-out  ;
+}
+
+#h1Projetos2{
+    color:#F2BE22 ; 
+    
+    text-shadow: 1px 1px 1px black;
+    animation: backgroundAnimationH1  infinite 5s alternate ease-in-out  ;
+    
 }
 
 @keyframes backgroundAnimation {
@@ -445,10 +523,20 @@ header {
     }
 }
 
+@keyframes backgroundAnimationH1 {
+    0%{
+        color:#000000;
+    }
+    100%{
+        color: #fbfbfb ;
+    }
+}
+
 #container{
     display: flex;
     width: 100%;     
     align-items: center;
+    
     
 }
 
@@ -512,6 +600,10 @@ header {
     align-items: center;
     justify-content: center;
     padding: 50px;
+
+}
+
+#div-image-seta-descricao-projetos{
 
 }
 #h1Descricao{
@@ -586,7 +678,7 @@ header {
     font-family: 'Biryani', sans-serif;
     font-weight: 500;
     text-shadow: 1px 2px 1px black;
-    text-align: start;
+    text-align: justify;
 }
 
 
@@ -594,20 +686,581 @@ header {
 #final{
     position: relative;
     top: 900px;
-    height: 800px;
+    
     text-align: center;
     background-color: #000000;
     padding: 10px 50px;
+    height: 100%;
 }
+
+
+
+
+
+@media(max-width:1500px){
+
+    #containerFinal{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+    #divPFInal{
+        width: 900px;
+    }
+
+    #final{
+        
+        height: 1300px;
+        overflow: hidden;
+    }
+    
+
+    #container{
+       
+    }
+    
+    #descricaoProjeto{
+        width: 50%;
+        height: 300px;
+        margin: 0;
+        position: absolute;
+        
+    }
+    #divProjetos{
+        display: flex;      
+        
+        width: 100%;
+       
+    }
+
+    .doisProjetos{
+        
+        width: 100%;
+        margin: 0;
+    }
+    #banner{
+        width: 60%;
+    }
+    .projeto img{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width:1024px){
+    
+    #banner{
+        width: 65%;
+        margin: ;
+    }
+    #descricaoProjeto{
+        width: 60%;
+        height: 300px;
+        margin: 0;
+        position: absolute;
+        right: 20px;
+        top: 250px;
+        
+    }
+
+    #divProjetos{
+        
+        justify-content: space-between;
+        padding: 0;
+        position: relative;
+        top:200px;
+        right: ;
+    }
+    .doisProjetos{
+        width: 40%;
+    }
+
+    .projetos {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projeto img {
+        width: 150px;
+    }
+
+    .div-image-seta-descricao-projeto {
+        position: absolute;
+        left: 48%;
+        top: 550px;
+        width: 80px;
+        height: 80px;
+        background-color: rgba(25, 25, 25, 0.5);
+        border-radius: 50%;
+    }
+
+    #divTextoLoser{
+        width: 92%;
+    }
+
+    #texto-e-imagem {
+        display: flex;
+        width: 70%;
+        height: 300px;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        left: 50px;
+    }
+    header{
+        background-size: cover;
+        background-position: right;
+    }
+
+    #divCurriculo{
+        margin-top: 20px;
+    }
+    .h2Mario{
+        left: 30%;
+    }
+
+    #display{
+        font-size: 1em;
+        
+    }
+
+    #fotoPerfil {
+        width: 250px;
+        border-radius: 50%;
+        filter: grayscale(30%);
+        transition-duration: 0.4s;
+        right: 0px;
+        position: absolute;
+    }
+
+    #divPFInal{
+        
+        position: relative;
+        margin: auto;
+    }
+
+    #h1Final{
+        
+        width: 30%;
+        position: relative;
+        left: 31%;
+    }
+}
+
+@media (max-width:375px){
+    #header{
+        background-color: transparent;
+    }
+    #textoMaior {
+        font-size: 27px;
+        color: #F2BE22;
+        border-right: 2px solid rgba(255, 255, 255, 0.75);
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .texto-apresentacao {
+        font-size: 14px;
+        color: white;
+        font-family: 'Chelsea Market', cursive;
+        position: relative;
+    }
+    header {        
+        background-color: #000000;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 90%;
+        width: 107.1vw;
+        position: relative;
+        background-position: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 400px;
+        box-shadow: inset 10px px 10px 15px rgb(211, 0, 0);
+        overflow: hidden;
+    }
+
+    #texto-e-imagem {
+        display: flex;
+        width: 87%;
+        flex-direction: column;
+        height: 500px;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+       
+    }
+
+    .typing-animation {
+        animation: blinkCursor 500ms steps(40) infinite normal, typing 1.8s steps(40) 1s normal both;
+    }
+    
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+    
+        to {
+            width:200px;
+        }
+    }
+    
+    
+    @keyframes blinkCursor {
+        from {
+            border-right-color: rgba(255, 255, 255, 0.75);
+        }
+    
+        to {
+            border-right-color: transparent;
+        }
+    }
+
+    #divTextoApresentacao{
+        width: 70%;
+        margin: auto;
+    }
+    #avatarImage {
+        width: 206px;
+        position: relative;
+    }
+
+    .div-image-seta {
+        position: absolute;
+        left: 45%;
+        bottom: 40px;
+        width: 59px;
+        height: 57px;
+        background-color: rgba(25, 25, 25, 0.5);
+        border-radius: 50%;
+        display: none;
+    }
+
+    #iconeSeta{
+        width: 60px;
+        display: none;
+    }
+
+
+
+   
+
+    /* ----------------------------------------------------------   SEGUNDA PARTE / HELLOW WORLD ----------------------------------------- */
+
+    
+    .englobandoDoisTextos {
+        width: 99%;
+        display: inline-block;
+        justify-content: space-between;
+        height: 50%;
+    }
+
+
+
+    #primeira-parte {
+        width: 107%;
+        height: 900px;
+        background-color: #F2BE22;
+        color: #F2BE22;
+        font-weight: bold;
+        font-family: 'Chelsea Market', cursive;
+        text-align: center;
+        padding: 15px;
+        position: absolute;
+        overflow: hidden;
+        display: inline-block;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-size: 10px;
+    }
+
+    .div-texto-sectionUm {
+        width: 92%;
+        height: 46%;
+        background-color: rgb(25, 25, 25);
+        color: aliceblue;
+        position: relative;
+        top: 10px;
+        font-family: 'Biryani', sans-serif;
+        padding: 20px;
+        border-radius: 7px;
+        text-shadow: 2px 2px 2px black;
+        box-shadow: 3px 3px 5px rgb(45 44 44 / 36%);
+        margin-bottom: 10px;
+        left: 10px;
+    }
+
+    .div-texto-sectionUmSegundaParte {
+        width: 92%;
+        height: 46%;
+        background-color: rgb(25, 25, 25);
+        color: aliceblue;
+        position: relative;
+        padding: 20px;
+        font-family: 'Biryani', sans-serif;
+        border-radius: 7px;
+        text-shadow: 2px 2px 2px black;
+        box-shadow: 3px 3px 5px rgb(45 44 44 / 36%);
+        left: 10px;
+        top: 0px;
+        margin-bottom: 10px;
+    }
+
+    #helloWorld {
+        font-size: 40px;
+        color: black;
+    }
+
+    /* ------------------------------------------ TERCEIRA PARTE ------------------------------------------------ */
+    #h1Mario {
+        color: white;
+        font-size: 50PX;
+    }
+
+    .h2Mario {
+        left: 29%;
+        font-size: 15px;
+    }
+
+    #game-body {
+        width: 107%;
+        height: 700px;
+        border-bottom: 13px solid rgb(34, 185, 62);
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(#87CEEB, #E0F6FF);
+        position: relative;
+    }
+    /* MARIO */
+
+    .mario {
+        position: absolute;
+        width: 74px;
+        bottom: -4px;
+        left: 10px;
+    }
+
+    .cano {
+        width: 84px;
+        position: absolute;
+        bottom: -28px;
+        right: 0;
+        visibility: visible;
+    }
+
+    #h1loser {
+        font-size: 20px;
+        position: relative;
+    }
+    #divTextoLoser{
+        width: 92%;
+        height: 254px;
+    } 
+    #carousel {
+        position: relative;
+        top: 880px;
+        height: 950px;
+        text-align: center;
+        font-family: 'Chelsea Market', cursive;
+        background-color: rgb(25, 25, 25);
+        display: flex;
+        flex-direction: column;
+        color: #F2BE22;
+        object-fit: cover;
+        width: 107%;
+    }
+
+    #banner{
+        width: 99%;
+        top: 0;
+        
+    }  
+
+    .icone {
+        width: 27px;
+        margin: 10px;
+        position: relative;
+        bottom: 0;
+    }
+
+    /*------------------------------------------------ QUINTA PARTE ---------------------------------------------- */
+
+    .projetos {
+        position: relative;
+        top: 880px;
+        height: 900px;
+        text-align: center;
+        font-family: 'Chelsea Market', cursive;
+        background-image: linear-gradient(to right,#F2BE22,#F28B16,#030303 );
+        background-size: 500% 100%;
+        animation: backgroundAnimation infinite 5s alternate ease-in-out;
+        width: 107%;
+        overflow: hidden;
+    }
+
+
+    #descricaoProjeto {
+        width: 92%;
+        height: 300px;
+        margin: 0;
+        position: absolute;
+        right: 20px;
+        top: 441px;
+    
+    }
+
+    .div-image-seta-descricao-projeto {
+        position: absolute;
+        left: 48%;
+        top: 550px;
+        width: 80px;
+        height: 80px;
+        background-color: rgba(25, 25, 25, 0.5);
+        border-radius: 50%;
+        display: none;
+    }
+
+    #divProjetos {
+        justify-content: space-between;
+        padding: 0;
+        position: relative;
+        top: 15px;
+        right: ;
+        left: 15px;
+    }
+
+    .projeto img {
+        width: 176px;
+        position: relative;
+        left: -28px;
+    }
+
+    .link{
+        width: 50px;
+    }
+
+    #display {
+        font-size: 15px;
+    }
+
+    /* -------------------------------------------------------- SEXTA PARTE ------------------------------------- */
+
+    #final {
+        position: relative;
+        top: 879px;
+        text-align: center;
+        background-color: #000000;
+        padding: 10px 50px;
+        height: 100%;
+        width: 107%;
+    }
+
+    #final {
+        position: relative;
+        top: 879px;
+        text-align: center;
+        background-color: #000000;
+        padding: 9px 0px;
+        height: 120%;
+        width: 107%;
+    }
+
+    #divPerfil {
+        width: 130px;
+        height: 130px;
+        position: relative;
+    }
+
+    #fotoPerfil {
+        width: 125px;
+        border-radius: 50%;
+        filter: grayscale(30%);
+        transition-duration: 0.4s;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 14px;
+        font-size: 12px;
+    }
+
+    #divLinks img {
+        width: 59px;
+    }
+
+    #iconeGit{
+        width: 50px;
+    }
+
+    #email {
+        display: flex;
+        position: relative;
+        top: 216px;
+        width: 90%;
+        text-align: center;
+    }
+
+    #informacoesFinais {
+        display: flex;
+        position: relative;
+        top: 167px;
+        width: 90%;
+        text-align: center;
+    }
+
+    #curriculo {
+        color: #000000;
+        text-decoration: none;
+        padding: 9px;
+        background-color: #E0F6FF;
+        font-weight: 700;
+        border-radius: 10px;
+        transition-duration: 1s;
+    }
+
+}
+
+
+
+
+
+
 
 #containerFinal{
     display: flex;    
     position: relative;
     top: 100px;
-    justify-content: space-around;   
-    width: 70%;    
-    margin-left: 70px;
+    justify-content: space-between;   
+    width: 90%;    
+    margin-left: 0px;
     align-items: center;
+    
+}
+
+#informacoesFinais{
+    display: flex;    
+    position: relative;
+    top:200px;     
+    width: 90%;      
+    text-align: center;
+    
+}
+
+#email{
+    display: flex;    
+    position: relative;
+    top:250px;     
+    width: 90%;      
+    text-align: center;
+    
+    
+    
 }
 
 
@@ -624,8 +1277,8 @@ header {
 }
 
 #fotoPerfil{
-    width: 300px;
-    border-radius: 47%;
+    width: 250px;
+    border-radius: 50%;
     filter: grayscale(30%);
     transition-duration: 0.4s;
     
@@ -638,8 +1291,76 @@ header {
 
 #divPFInal{
     color: white;
-    width: 60%;
+    width: 100%;
+    font-family: 'Biryani', sans-serif;
+    font-size: 1.1em;
+    text-align: justify;
+    margin: auto 10px;
+    
 }
+
+
+#divCurriculo{
+    width: 170PX;
+}
+
+#curriculo{
+    color: #000000;
+    text-decoration: none;
+    padding: 20px;
+    background-color: #E0F6FF;
+    font-weight: 700;
+    border-radius: 10px;
+    transition-duration: 1s;
+}
+
+#curriculo:hover{
+    background-color: transparent;
+    border: #F2BE22 solid 1px;
+    color: white;
+    transition-duration: 0.5s;
+
+}
+
+#linkEnarmonia{
+    color: #F2BE22;
+}
+
+#linkEnarmonia:hover{
+    color: blue;
+}
+
+#divLinks{    
+    margin: auto;
+}
+
+#divLinks a{
+    margin-left: 20px;
+    
+}
+
+#divLinks img{
+    transition-duration:0.5s ;
+}
+
+#divLinks img:hover{
+    transform: scale(1.1);
+    transition-duration:0.5s ;
+
+}
+
+#iconeGit{
+    width: 50px;
+}
+
+#divEmail{
+    margin: auto;
+    font-family: 'Biryani', sans-serif;
+    font-size: 1.2em;
+    
+    color: #F2BE22;
+}
+
 
 
 

@@ -19,9 +19,9 @@
 
     <body>
         <main>
-            <header>
+            <header id="header">
                 <div class="textoEImagem" id="texto-e-imagem">
-                    <div>
+                    <div id="divTextoApresentacao">
                         <p class="texto-apresentacao ">Ola. Seja bem vindo!</p><br>
                         <p id="textoMaior" class="texto-apresentacao typing-animation">Eu sou o Elias</p> <br>
                         <p class="texto-apresentacao">e este é meu portfólio</p>
@@ -33,6 +33,15 @@
                 </div>
                 <div class="div-image-seta">
                     <a href="#primeira-parte"> <img id="iconeSeta" src="/img/setaParaBaixo.png"> </a>
+                </div>
+                <div>
+                    <a href="#header">
+                        <div id="rolagem">
+                            <img id="imageSeta" src="/img/icones/setas-para-cima.png" alt="">
+                        </div>
+                        
+                    </a>
+                    
                 </div>
             </header>
             <section id="primeira-parte">
@@ -46,24 +55,17 @@
                                 <h1>Quem sou eu?</h1>
                             </div>
                             <div>
-                                <p class="textoSctioUm">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Pariatur aut ut quisquam minus
-                                    consequuntur similique error neque quae accusantium exercitationem reprehenderit ad,
-                                    in
-                                    iste. Reprehenderit neque corrupti obcaecati minima consectetur?</p>
+                                <p class="textoSctioUm">Me chamo Elias, tenho 23 anos e estou graduando no curso Análise e desenvolvimento de sistemas pela UNIASSELVI. Atualmente sou professor de música e estou em transição de carreira. Estudo desenvolvimento web com foco no front-end</p>
                             </div>
                         </div>
                         <div class="div-texto-sectionUm">
                             <div>
-                                <h1>Intenções</h1>
+                                <h1>Qual meu objetivo</h1>
                             </div>
                             <div>
                                 <p class="textoSctioUm">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, odio dicta dolorum,
-                                    soluta
-                                    impedit possimus voluptates placeat esse deleniti non dignissimos iste. Corrupti
-                                    suscipit
-                                    quis saepe ducimus, quaerat voluptatum veniam!
+                                    O objetivo deste projeto é mostrar um pouco dos meus conhecimentos em front-end. 
+                                    
                                 </p>
                             </div>
                         </div>
@@ -72,7 +74,7 @@
                     <div class="englobandoDoisTextos">
                         <div class="div-texto-sectionUmSegundaParte">
                             <div>
-                                <h1>Quem sou eu?</h1>
+                                <h1>O que estudo?</h1>
                             </div>
                             <div>
                                 <p class="textoSctioUm">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -85,7 +87,7 @@
                         </div>
                         <div class="div-texto-sectionUmSegundaParte">
                             <div>
-                                <h1>Intenções</h1>
+                                <h1>O que utilizei?</h1>
                             </div>
                             <div>
                                 <p class="textoSctioUm">
@@ -118,7 +120,7 @@
                             <h1 id="h1loser">Parece que nós dois não somos bons com pulos</h1>
                             <p id="pLoser">Continue rolando, ainda tem umas cosias que você precisa ver</p>
                             <div class="imageSetaLoser">
-                                <a href="#h1Projetos"> <img id="iconeSeta" src="/img/setaParaBaixo.png"> </a>
+                                <a  href="#h1Projetos"> <img id="iconeSeta" title="Voltar ao topo" src="/img/setaParaBaixo.png"> </a>
                             </div>
                         </div>
 
@@ -201,65 +203,71 @@
                     <img class="icone animacaoicones5Sec" src="/img/icones/html.png" alt="">
                     <img class="icone animacaoIcones2Sec" src="/img/icones/css-3.png" alt="">
                     <img class="icone animacaoicones5Sec" src="/img/icones/js.png" alt="">
-                    <img class="icone animacaoIcones2Sec" src="/img/icones/iconeVue.png" alt="">
+                    <a href="#h1Projetos2">
+                        <img class="icone animacaoIcones2Sec" src="/img/icones/iconeVue.png" alt="">
+                    </a>                    
                     <img class="icone animacaoicones5Sec" src="/img/icones/vuetify-logo.png" alt="">
                     <img class="icone animacaoIcones2Sec" src="/img/icones/Bootstrap_logo.svg.png" alt="">
                     <img class="icone animacaoicones5Sec" src="/img/icones/github.png" alt="">
-                    
+
                 </div>
 
                 <!-- PARTE 4 -->
             </section>
             <section class="projetos">
-                <h1>Descrição dos projetos</h1>
+                <h1 id="h1Projetos2">Descrição dos projetos</h1>
                 <div id="container">
                     <div id="divProjetos">
                         <div class="doisProjetos">
                             <div class="projeto">
                                 <div>
-                                    <a href="#"> 
+                                    <a class="link" href="https://github.com/eliasbragga/portfolio" target="_blank">
                                         <img src="/projetos/miniCapas/p5.jpg" alt="" data-nome="Portfolio"
-                                        data-autor="Elias Braga"
-                                        data-descricao="O projeto foi criado para mostrar um pouco do meu trabalho e minha evolução. Utilizei JavaScript para o desenvolvimento."
-                                        data-linguagem="JavaScript e Bootstrap" class="imgProjeto" id="port">
+                                            data-autor="Elias Braga"
+                                            data-descricao="O projeto foi criado para mostrar um pouco do meu trabalho e minha evolução. Utilizei JavaScript para o desenvolvimento."
+                                            data-linguagem="JavaScript e Bootstrap" class="imgProjeto" id="port">
                                     </a>
                                 </div>
                             </div>
                             <div class="projeto">
                                 <div>
-                                    <a href="#">
+                                    <a class="link" href="https://github.com/eliasbragga/makeYourBurger-vue" target="_blank">
                                         <img src="/projetos/miniCapas/p2.png" alt="" class="imgProjeto"
-                                        data-nome="Make Your Burger" data-autor="Elias Braga"
-                                        data-descricao="Desenvolvi este site durante um curso que fiz. Durante o curso pude aprender sobre requisições de API, tipografia e validação de formulário. O projeto é de uma hamburgueria fectícia que o cliente realiza o pedido e o pedido vai diretamente para o banco de dados."
-                                        data-linguagem="Vue.js" id="cordel">
-                                    </a>                                    
+                                            data-nome="Make Your Burger" data-autor="Elias Braga"
+                                            data-descricao="Desenvolvi este site durante um curso que fiz. Durante o curso pude aprender sobre requisições de API, tipografia e validação de formulário. O projeto é de uma hamburgueria fectícia que o cliente realiza o pedido e o pedido vai diretamente para o banco de dados."
+                                            data-linguagem="Vue.js" id="cordel">
+                                    </a>
                                 </div>
+                                
 
+                            </div>
+                            <div class="div-image-seta-descricao-projeto" id="image-setaMario">
+                                <a class="link" href="#h1Final"> <img id="iconeSeta" src="/img/setaParaBaixo.png"> </a>
                             </div>
                         </div>
                         <div class="doisProjetos">
 
                             <div class="projeto">
                                 <div id="divImage" id="portfolio">
-                                    <a href="#">
+                                    <a class="link" href="https://github.com/eliasbragga/projeto_enarmonico" target="_blank">
                                         <img src="/projetos/miniCapas/p1.png" alt="" class="imgProjeto"
-                                        data-nome="Enarmonia" data-autor="Elias Braga"
-                                        data-descricao="Desenvolvi este projeto no intuito de facilitar a didática no ensino teoria musical e ajduar estudantes da música. O site retorna a nota enarmônica da nota solicitada. Alguns colegas professores de música ja utilizam o site durante as aulas"
-                                        data-linguagem="Vue.js e Vuetify" id="solive">
+                                            data-nome="Enarmonia" data-autor="Elias Braga"
+                                            data-descricao="Desenvolvi este projeto no intuito de facilitar a didática no ensino teoria musical e ajduar estudantes da música. O site retorna a nota enarmônica da nota solicitada. Alguns colegas professores de música ja utilizam o site durante as aulas"
+                                            data-linguagem="Vue.js e Vuetify" id="solive">
                                     </a>
-                                    
+
                                 </div>
 
                             </div>
                             <div class="projeto">
                                 <div>
-                                    <a href="#">
-                                        <img src="/projetos/miniCapas/p3.png" alt="" class="imgProjeto" data-nome="Solive"
-                                        data-autor="Elias Braga"
-                                        data-descricao="Criei este site para servir como um portfólio para um cliente. O site conta com uma galeria de fotos e links direcionando para as redes sociais"
-                                        data-linguagem="HTML e CSS" id="make">
+                                    <a class="link" href="https://github.com/eliasbragga/site-solive" target="_blank">
+                                        <img src="/projetos/miniCapas/p3.png" alt="" class="imgProjeto"
+                                            data-nome="Solive" data-autor="Elias Braga"
+                                            data-descricao="Criei este site para servir como um portfólio para um cliente. O site conta com uma galeria de fotos e links direcionando para as redes sociais"
+                                            data-linguagem="HTML e CSS" id="make">
                                     </a>
-                                    
+
                                 </div>
 
                             </div>
@@ -267,23 +275,23 @@
                         <div class="doisProjetos">
 
                             <div class="projeto">
-                                <div><a href="#">
-                                            <img src="/projetos/miniCapas/p4.png" alt="" class="imgProjeto"
+                                <div><a class="link" href="https://github.com/eliasbragga/projeto_cordel" target="_blank">
+                                        <img src="/projetos/miniCapas/p4.png" alt="" class="imgProjeto"
                                             data-nome="Site Cordel" data-autor="Elias Braga"
                                             data-descricao="Desenvolvi este projeto durante um curso que fiz. O projeto aprensa poesias com imagens e encaminha o usuário para a página do autor"
-                                            data-linguagem="HTML e CSS" id="enarmonia"> 
+                                            data-linguagem="HTML e CSS" id="enarmonia">
                                     </a>
                                 </div>
                             </div>
                             <div class="projeto">
                                 <div>
-                                    <a href="#">
+                                    <a class="link" href="https://github.com/eliasbragga/projeto-android" target="_blank">
                                         <img src="/projetos/miniCapas/p6.jpg" alt="" class="imgProjeto"
-                                        data-nome="Site Android" data-autor="Elias Braga"
-                                        data-descricao="Desenvolvi este projeto durante um curso de HTML e CSS. O site fala sobre o bugdroid, sua criação e curiosidades. Pude Aprender sobre responsividade, trabalhar com tabelas e sobre psicologia das cores. "
-                                        data-linguagem="HTML e CSS" id="android">
+                                            data-nome="Site Android" data-autor="Elias Braga"
+                                            data-descricao="Desenvolvi este projeto durante um curso de HTML e CSS. O site fala sobre o bugdroid, sua criação e curiosidades. Pude Aprender sobre responsividade, trabalhar com tabelas e sobre psicologia das cores. "
+                                            data-linguagem="HTML e CSS" id="android">
                                     </a>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -291,7 +299,7 @@
                     <div id="descricaoProjeto">
 
                         <p id="display">Passe o mouse por cima de algum projeto para mais informações</p>
-                    </div>                   
+                    </div>
 
                 </div>
                 </div>
@@ -305,25 +313,59 @@
                         <img id="fotoPerfil" src="/img/fotoPerfil.jpg" alt="">
                     </div>
                     <div id="divPFInal">
-                        <p>Estudante autodidata de Desenvolvimento Web: Python; Flask | SQL | HTML5 | CSS3 | JavaScript,React.js, Vue.js, Vuetify, Node.js | Versionamento com Git | GitHub. Gosto de resolver desafios, criar, sou automotivado e tenho sede de aprender. 
-                            Desde que conheci a programação, novos objetivos surgiram. 
-                            Trabalho há 5 anos na área da cultura como Professor de Música particular, o que muito me ajudou em minha comunicação, trabalho em equipe, liderança e me ensinou a aprender a aprender. 
-                            Acredito que os passos mais importantes para adquirir novas habilidades são a prática e a vontade de aprender.
-                            Estou em migração de carreira profissional entre duas áreas pelas quais sou apaixonado: música e tecnologia.                             
-                            Utilizo as ferramentas de programação para tornar mais prático e didático o ensino da música. Para isso, criei o App Enarmonia Simples, que ajuda meus alunos a descobrirem as notas enarmônicas, e estou desenvolvendo um site para alocação dos conteúdos ministrados em aula, tais como: vídeos, PDFs e exercícios.
-                            <p>À procura da primeira oportunidade de emprego como Front-end e, quem sabe, na sua empresa ;). Ainda tenho muito que aprender e estou disposto a isto! Que tal conversarmos sobre? Email- bragga_elias@gmail.com</p></p>
-                    </div>                    
+                        <p>Estudante autodidata de Desenvolvimento Web com foco em front-end. Tenho conhecimentos em:
+                            HTML, CSS, Javascript, frameworks como Vue.js, React.js, Versionamento com Git e GitHub.
+                            Tenho conhecimentos básicos em: Python; Flask | SQL |. Gosto de resolver desafios, gosto de
+                            criar, sou automotivado e tenho sede de aprender.
+                            Desde que conheci a programação, novos objetivos surgiram.
+                            Trabalho há 5 anos na área da cultura como Professor de Música particular, o que muito me
+                            ajudou em minha comunicação, trabalho em equipe, liderança e me ensinou a aprender a
+                            aprender.
+                            Acredito que os passos mais importantes para adquirir novas habilidades são a prática e a
+                            vontade de aprender.
+                            Estou em migração de carreira profissional entre duas áreas pelas quais sou apaixonado:
+                            música e tecnologia.
+                            Utilizo as ferramentas de programação para tornar mais prático e didático o ensino da
+                            música. Para isso, criei o App Enarmonia Simples, que ajuda meus alunos a descobrirem as
+                            notas enarmônicas (link do projeto: <a id="linkEnarmonia"
+                                href="https://github.com/eliasbragga/projeto_enarmonico">Projeto Enarmonia</a> ) e estou
+                            desenvolvendo um site para alocação dos conteúdos ministrados em aula, tais como: vídeos,
+                            PDFs e exercícios.
+                        <p>Estou à procura da primeira oportunidade de emprego como Front-end e, quem sabe, na sua
+                            empresa ;). Ainda tenho muito que aprender e estou disposto a isto!Que tal conversarmos
+                            sobre? </p>
+                        </p>
+                    </div>
+                    <div>
+                        <div id="divCurriculo">
+                            <a id="curriculo" href="/pdf/CV-EliasBraga.zip" download="CV-EliasBraga.zip"
+                                type="application/zip">Baixar curriculo</a>
+                        </div>
+                    </div>
                 </div>
-                
-                
+                <div id="informacoesFinais">
+                    <div id="divLinks">
+                        <a href="https://www.instagram.com/bragga_elias/" target="_blank"><img
+                                src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white"
+                                target="_blank"></a>
+                        <a href="https://github.com/eliasbragga" target="_blank"><img id="iconeGit"
+                                src="/img/icones/github.png"></a>
+                        <a href="https://www.linkedin.com/in/elias-braga-069144172/" target="_blank"><img
+                                src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"
+                                target="_blank"></a>
+                    </div>
+                </div>
+                <div id="email">
+                    <div id="divEmail">
+                        <p>Email: eliasbragga44@gmail.com</p>
+                    </div>
+
+                </div>
+
+            </div>
 
             </section>
         </main>
-
-
-
-
-
 
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
